@@ -1,6 +1,8 @@
 import flowRemoveTypes from 'flow-remove-types'
 import path from 'node:path'
 
+// Uses current file location to get project root.
+// Update it accordingly for your project.
 const root = path.dirname(path.dirname(import.meta.url))
 
 export async function resolve (specifier, context, nextResolve) {
